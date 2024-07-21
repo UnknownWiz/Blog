@@ -1,29 +1,21 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import styles from "./menuPosts.module.css";
-import Image from "next/image";
+import styles from "./menuPosts.module.css"
 
 const MenuPosts = ({ withImage }) => {
   return (
     <div className={styles.items}>
-      <Link
-        href="/"
-        className={styles.item}
-      >
+      <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image
-              src="/p1.jpeg"
-              alt=""
-              fill
-              className={styles.image}
-            />
+            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
           </div>
         )}
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.travel}`}>Travel</span>
           <h3 className={styles.postTitle}>
-            Uti cupidatat anim consectetur incididunt et pariatur consequat elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
@@ -31,18 +23,10 @@ const MenuPosts = ({ withImage }) => {
           </div>
         </div>
       </Link>
-      <Link
-        href="/"
-        className={styles.item}
-      >
+      <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image
-              src="/p1.jpeg"
-              alt=""
-              fill
-              className={styles.image}
-            />
+            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
           </div>
         )}
         <div className={styles.textContainer}>
@@ -50,7 +34,7 @@ const MenuPosts = ({ withImage }) => {
             Culture
           </span>
           <h3 className={styles.postTitle}>
-            Ut cupidatat anim consectetur incididunt et pariatur consequat elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
@@ -58,24 +42,16 @@ const MenuPosts = ({ withImage }) => {
           </div>
         </div>
       </Link>
-      <Link
-        href="/"
-        className={styles.item}
-      >
+      <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image
-              src="/p1.jpeg"
-              alt=""
-              fill
-              className={styles.image}
-            />
+            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
           </div>
         )}
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.food}`}>Food</span>
           <h3 className={styles.postTitle}>
-            Ut cupidatat anim consectetur incididunt et pariatur consequat elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
@@ -83,18 +59,10 @@ const MenuPosts = ({ withImage }) => {
           </div>
         </div>
       </Link>
-      <Link
-        href="/"
-        className={styles.item}
-      >
+      <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image
-              src="/p1.jpeg"
-              alt=""
-              fill
-              className={styles.image}
-            />
+            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
           </div>
         )}
         <div className={styles.textContainer}>
@@ -102,7 +70,7 @@ const MenuPosts = ({ withImage }) => {
             Fashion
           </span>
           <h3 className={styles.postTitle}>
-            Ut cupidatat anim consectetur incididunt et pariatur consequat elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>

@@ -1,18 +1,20 @@
-import CardList from '@/components/CardList/CardList'
-import styles from './blogPage.module.css'
-import Menu from '@/components/Menu/Menu'
+import CardList from "@/components/cardList/CardList";
+import styles from "./blogPage.module.css";
+import Menu from "@/components/Menu/Menu";
 
-const BlogPage = () => {
+const BlogPage = ({ searchParams }) => {
+  const page = parseInt(searchParams.page) || 1;
+  const { cat } = searchParams;
+
   return (
-    <div className={container}>BlogPage
-    <h1 className={styles.title}></h1>
-    <div className={styles.content}>
-        <CardList />
+    <div className={styles.container}>
+      <h1 className={styles.title}>{cat} Blog</h1>
+      <div className={styles.content}>
+        <CardList page={page} cat={cat}/>
         <Menu />
+      </div>
     </div>
-    </div>
-    
-  )
-}
+  );
+};
 
-export default BlogPage
+export default BlogPage;

@@ -1,0 +1,14 @@
+Issue Resolved
+
+Not being able to add or delete records with one to many relations due to a error on data?
+
+Fixed aboved
+
+instead of using prisma use mongoDB to force delete
+
+Issue
+logging into google account would have a callback error with error saying user not found which references the above. Corrupted data in a feild. 
+
+Fixed above
+
+forcing mongoDB to delete the account than could now sign in through google auth. That recreated the account and with the record relation it created a new user.

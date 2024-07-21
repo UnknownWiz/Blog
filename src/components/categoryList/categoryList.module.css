@@ -43,6 +43,10 @@
   background-color: #ff625731;
 }
 
+.category.travel{
+  background-color: #3adf7131;
+}
+
 .image {
   border-radius: 50%;
 }
